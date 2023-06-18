@@ -24,11 +24,11 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="logo link" href="./index.html">
+        <a class="logo link mobile-logo" href="./index.html">
           Web<span class="span">Studio</span>
         </a>
 
-        <div class="mobile-menu js-menu-container">
+        <div class="menu-container js-menu-container" id="mobile-menu">
           <button
             type="button"
             class="mobile-menu-close-btn close-btn js-close-menu"
@@ -37,6 +37,10 @@
               <use href="./images/icons.svg#icon-close-modal-btn"></use>
             </svg>
           </button>
+
+          <a class="logo link" href="./index.html">
+            Web<span class="span">Studio</span>
+          </a>
 
           <nav class="header-nav">
             <ul class="header-nav-list list">
@@ -107,7 +111,7 @@
         <button
           type="button"
           class="menu-toggle js-open-menu"
-          aria-expanded="true"
+          aria-expanded="false"
           aria-controls="mobile-menu"
         >
           <svg class="menu-toggle-icon" width="32" height="22">
@@ -189,21 +193,21 @@
           <ul class="projects-list list">
             <li class="projects-list-item">
               <img
-                src="./images/pic-1.jpg"
+                src="./images/project-1.jpeg"
                 width="360"
                 alt="A computer with analytical data on the screen"
               />
             </li>
             <li class="projects-list-item">
               <img
-                src="./images/pic-2.jpg"
+                src="./images/project-2.jpeg"
                 width="360"
                 alt="A phone with an open chat on the screen"
               />
             </li>
             <li class="projects-list-item">
               <img
-                src="./images/pic-3.jpg"
+                src="./images/project-3.jpeg"
                 width="360"
                 alt="A phone with an open app on the screen"
               />
@@ -218,7 +222,7 @@
           <ul class="list card-list our-team-list">
             <li class="our-team-item card-item white-bg">
               <img
-                src="./images/mark-guerrero.jpg"
+                src="./images/mark-guerrero.jpeg"
                 width="264"
                 alt="Mark Guerrero"
               />
@@ -258,7 +262,7 @@
               </div>
             </li>
             <li class="our-team-item card-item white-bg">
-              <img src="./images/tom-ford.jpg" width="264" alt="Tom Ford" />
+              <img src="./images/tom-ford.jpeg" width="264" alt="Tom Ford" />
               <div class="wrapper">
                 <h3 class="item-title card-title">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
@@ -296,7 +300,7 @@
             </li>
             <li class="our-team-item card-item white-bg">
               <img
-                src="./images/camila-garcia.jpg"
+                src="./images/camila-garcia.jpeg"
                 width="264"
                 alt="Camila Garcia"
               />
@@ -337,7 +341,7 @@
             </li>
             <li class="our-team-item card-item white-bg">
               <img
-                src="./images/daniel-wilson.jpg"
+                src="./images/daniel-wilson.jpeg"
                 width="264"
                 alt="Daniel Wilson"
               />
