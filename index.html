@@ -24,44 +24,100 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a class="logo link" href="./index.html">
-            Web<span class="span">Studio</span>
-          </a>
-          <ul class="header-nav-list list">
-            <li class="header-nav-item item">
-              <a class="header-nav-link current" href="./index.html">Studio</a>
-            </li>
-            <li class="header-nav-item item">
-              <a class="header-nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="header-nav-item item">
-              <a class="header-nav-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <a class="logo link" href="./index.html">
+          Web<span class="span">Studio</span>
+        </a>
 
-        <address class="header-contacts">
-          <ul class="header-contacts-list list">
-            <li class="header-contacts-item item">
-              <a
-                class="header-contacts-link link"
-                href="mailto:info@devstudio.com"
-              >
-                info@devstudio.com
+        <div class="mobile-menu js-menu-container">
+          <button
+            type="button"
+            class="mobile-menu-close-btn close-btn js-close-menu"
+          >
+            <svg width="8" height="8" class="mobile-menu-close-svg close-svg">
+              <use href="./images/icons.svg#icon-close-modal-btn"></use>
+            </svg>
+          </button>
+
+          <nav class="header-nav">
+            <ul class="header-nav-list list">
+              <li class="header-nav-item item">
+                <a class="header-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-nav-item item">
+                <a class="header-nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="header-nav-item item">
+                <a class="header-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="header-contacts">
+            <ul class="header-contacts-list list">
+              <li class="header-contacts-item item">
+                <a
+                  class="header-contacts-link link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contacts-item item">
+                <a class="header-contacts-link link" href="tel:+110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-media-list">
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="header-contacts-item item">
-              <a class="header-contacts-link link" href="tel:+110001111111">
-                +11 (000) 111-11-11
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
-        </address>
+        </div>
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="true"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#hamburger-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <main>
+    <main class="">
       <section class="section hero navy-blue-bg">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -81,7 +137,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="card-title">Strategy</h3>
+              <h3 class="features-list-title card-title">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -93,7 +149,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="card-title">Punctuality</h3>
+              <h3 class="features-list-title card-title">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -105,7 +161,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="card-title">Diligence</h3>
+              <h3 class="features-list-title card-title">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -117,7 +173,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="card-title">Technologies</h3>
+              <h3 class="features-list-title card-title">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -160,7 +216,7 @@
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list card-list our-team-list">
-            <li class="item card-item white-bg">
+            <li class="our-team-item card-item white-bg">
               <img
                 src="./images/mark-guerrero.jpg"
                 width="264"
@@ -201,7 +257,7 @@
                 </ul>
               </div>
             </li>
-            <li class="item card-item white-bg">
+            <li class="our-team-item card-item white-bg">
               <img src="./images/tom-ford.jpg" width="264" alt="Tom Ford" />
               <div class="wrapper">
                 <h3 class="item-title card-title">Tom Ford</h3>
@@ -238,7 +294,7 @@
                 </ul>
               </div>
             </li>
-            <li class="item card-item white-bg">
+            <li class="our-team-item card-item white-bg">
               <img
                 src="./images/camila-garcia.jpg"
                 width="264"
@@ -279,7 +335,7 @@
                 </ul>
               </div>
             </li>
-            <li class="item card-item white-bg">
+            <li class="our-team-item card-item white-bg">
               <img
                 src="./images/daniel-wilson.jpg"
                 width="264"
@@ -444,8 +500,12 @@
 
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg width="8" height="8" class="modal-close-svg">
+        <button
+          type="button"
+          class="modal-close-btn close-btn"
+          data-modal-close
+        >
+          <svg width="8" height="8" class="modal-close-svg close-svg">
             <use href="./images/icons.svg#icon-close-modal-btn"></use>
           </svg>
         </button>
@@ -542,5 +602,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
