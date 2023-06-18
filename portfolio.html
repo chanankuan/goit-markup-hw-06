@@ -24,42 +24,100 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
+        <a class="logo link mobile-logo" href="./index.html">
+          Web<span class="span">Studio</span>
+        </a>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button
+            type="button"
+            class="mobile-menu-close-btn close-btn js-close-menu"
+          >
+            <svg width="8" height="8" class="mobile-menu-close-svg close-svg">
+              <use href="./images/icons.svg#icon-close-modal-btn"></use>
+            </svg>
+          </button>
+
           <a class="logo link" href="./index.html">
             Web<span class="span">Studio</span>
           </a>
-          <ul class="header-nav-list list">
-            <li class="header-nav-item item">
-              <a class="header-nav-link" href="./index.html">Studio</a>
-            </li>
-            <li class="header-nav-item item">
-              <a class="header-nav-link current" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="header-nav-item item">
-              <a class="header-nav-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
 
-        <address class="header-contacts">
-          <ul class="header-contacts-list list">
-            <li class="header-contacts-item item">
-              <a
-                class="header-contacts-link link"
-                href="mailto:info@devstudio.com"
-              >
-                info@devstudio.com
+          <nav class="header-nav">
+            <ul class="header-nav-list list">
+              <li class="header-nav-item item">
+                <a class="header-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="header-nav-item item">
+                <a class="header-nav-link current" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-nav-item item">
+                <a class="header-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="header-contacts">
+            <ul class="header-contacts-list list">
+              <li class="header-contacts-item item">
+                <a
+                  class="header-contacts-link link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contacts-item item">
+                <a class="header-contacts-link link" href="tel:+110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-media-list">
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="header-contacts-item item">
-              <a class="header-contacts-link link" href="tel:+110001111111">
-                +11 (000) 111-11-11
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="#" class="social-media-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
-        </address>
+        </div>
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#hamburger-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -95,7 +153,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-1.jpg"
+                    srcset="
+                      ./images/portfolio-img-1.jpeg    1x,
+                      ./images/portfolio-img-1@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-1.jpeg"
                     alt="Banking App Interface"
                     width="360"
                   />
@@ -116,7 +178,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-2.jpg"
+                    srcset="
+                      ./images/portfolio-img-2.jpeg    1x,
+                      ./images/portfolio-img-2@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-2.jpeg"
                     alt="Cashless Payment"
                     width="360"
                   />
@@ -137,7 +203,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-3.jpg"
+                    srcset="
+                      ./images/portfolio-img-3.jpeg    1x,
+                      ./images/portfolio-img-3@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-3.jpeg"
                     alt="Meditation App"
                     width="360"
                   />
@@ -158,7 +228,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-4.jpg"
+                    srcset="
+                      ./images/portfolio-img-4.jpeg    1x,
+                      ./images/portfolio-img-4@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-4.jpeg"
                     alt="Taxi Service"
                     width="360"
                   />
@@ -179,7 +253,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-5.jpg"
+                    srcset="
+                      ./images/portfolio-img-5.jpeg    1x,
+                      ./images/portfolio-img-5@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-5.jpeg"
                     alt="Screen Illustrations"
                     width="360"
                   />
@@ -200,7 +278,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-6.jpg"
+                    srcset="
+                      ./images/portfolio-img-6.jpeg    1x,
+                      ./images/portfolio-img-6@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-6.jpeg"
                     alt="Online Courses"
                     width="360"
                   />
@@ -221,7 +303,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-7.jpg"
+                    srcset="
+                      ./images/portfolio-img-7.jpeg    1x,
+                      ./images/portfolio-img-7@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-7.jpeg"
                     alt="Instagram Stories Concept"
                     width="360"
                   />
@@ -242,7 +328,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-8.jpg"
+                    srcset="
+                      ./images/portfolio-img-8.jpeg    1x,
+                      ./images/portfolio-img-8@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-8.jpeg"
                     alt="Organic Food"
                     width="360"
                   />
@@ -263,7 +353,11 @@
                 <div class="overlay-box">
                   <img
                     class="card-img"
-                    src="./images/portfolio-img-9.jpg"
+                    srcset="
+                      ./images/portfolio-img-9.jpeg    1x,
+                      ./images/portfolio-img-9@2x.jpeg 2x
+                    "
+                    src="./images/portfolio-img-9.jpeg"
                     alt="Fresh Coffee"
                     width="360"
                   />
@@ -350,5 +444,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
