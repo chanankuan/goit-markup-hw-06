@@ -9,6 +9,12 @@
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
 
+    // const body = document.body;
+    // isMenuOpen
+    //   ? (body.style.overflow = "hidden")
+    //   : (body.style.overflow = "auto");
+
+    // У мене чомусь не працює цей фрагмент коду(( тому я написав вище свій
     const scrollLockMethod = !isMenuOpen
       ? "disableBodyScroll"
       : "enableBodyScroll";
