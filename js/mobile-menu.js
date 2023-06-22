@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector(".js-menu-container");
   const openMenuBtn = document.querySelector(".js-open-menu");
   const closeMenuBtn = document.querySelector(".js-close-menu");
+  const body = document.body;
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -9,16 +10,15 @@
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
 
-    // const body = document.body;
-    // isMenuOpen
-    //   ? (body.style.overflow = "hidden")
-    //   : (body.style.overflow = "auto");
-
     // У мене чомусь не працює цей фрагмент коду(( тому я написав вище свій
-    const scrollLockMethod = !isMenuOpen
-      ? "disableBodyScroll"
-      : "enableBodyScroll";
-    bodyScrollLock[scrollLockMethod](document.body);
+    // const scrollLockMethod = !isMenuOpen
+    //   ? "disableBodyScroll"
+    //   : "enableBodyScroll";
+    // bodyScrollLock[scrollLockMethod](document.body);
+
+    !isMenuOpen
+      ? (body.style.overflow = "hidden")
+      : (body.style.overflow = "auto");
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
@@ -29,6 +29,7 @@
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    // bodyScrollLock.enableBodyScroll(document.body);
+    body.style.overflow = "auto";
   });
 })();
