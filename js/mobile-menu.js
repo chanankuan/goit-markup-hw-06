@@ -5,20 +5,17 @@
   const body = document.body;
 
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
+    const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
 
-    // У мене чомусь не працює цей фрагмент коду(( тому я написав вище свій
+    // У мене чомусь не працює цей фрагмент коду(( тому прописав по-іншому
     // const scrollLockMethod = !isMenuOpen
     //   ? "disableBodyScroll"
     //   : "enableBodyScroll";
     // bodyScrollLock[scrollLockMethod](document.body);
 
-    !isMenuOpen
-      ? (body.style.overflow = "hidden")
-      : (body.style.overflow = "auto");
+    !isMenuOpen ? (body.style.overflow = "hidden") : (body.style.overflow = "auto");
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
